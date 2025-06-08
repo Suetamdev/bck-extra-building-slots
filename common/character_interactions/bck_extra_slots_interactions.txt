@@ -1,0 +1,241 @@
+﻿bck_extra_slot_interaction = {
+	category = interaction_category_uncategorized
+	hidden = yes
+	special_interaction = adding_building_slot
+	desc = bck_extra_slot_interaction_desc
+	target_type = title
+	target_filter = recipient_domain_titles_including_leases
+	auto_accept = yes
+
+	can_be_picked_title = {
+		scope:target = {
+			holder = {
+				OR = {
+					this = scope:actor
+					is_vassal_or_below_of = scope:actor
+				}
+			}
+
+			trigger_if = {
+				NOT = {
+					tier > tier_county
+				}
+			}
+
+			trigger_if = {
+				limit = { tier <= tier_county }
+				NOT = {
+					title_province = {
+						free_building_slots > 0
+					}
+				}
+			}
+		}
+	}
+
+	cost = {
+		gold = {
+			value = 250
+
+			# City, Temple and Tribal Holding increase the scale value
+			if = {
+				limit = {
+					scope:target = {
+						title_province = {
+							OR = {
+								has_holding_type = tribal_holding
+								has_holding_type = city_holding
+								has_holding_type = church_holding
+							}
+						}
+					}
+				}
+				add = 100
+			}
+
+			# Development reduce the scale value
+			if = {
+				limit = {
+					scope:target = {
+						title_province = {
+							county = { development_level >= 25 }
+						}
+					}
+				}
+				add = -35
+			}
+			if = {
+				limit = {
+					scope:target = {
+						title_province = {
+							county = { development_level >= 50 }
+						}
+					}
+				}
+				add = -35
+			}
+			if = {
+				limit = {
+					scope:target = {
+						title_province = {
+							county = { development_level >= 75 }
+						}
+					}
+				}
+				add = -35
+			}
+			if = {
+				limit = {
+					scope:target = {
+						title_province = {
+							county = { development_level >= 100 }
+						}
+					}
+				}
+				add = -45
+			}
+
+			# Every Building slot multiply the value
+			if = {
+				limit = {
+						scope:target = {
+							title_province = {
+								building_slots > 2
+							}
+						}
+					}
+				add = 150
+			}
+			if = {
+				limit = {
+						scope:target = {
+							title_province = {
+								building_slots > 3
+							}
+						}
+					}
+				add = 200
+			}
+			if = {
+				limit = {
+						scope:target = {
+							title_province = {
+								building_slots > 4
+							}
+						}
+					}
+				add = 250
+				multiply = 2
+			}
+			if = {
+				limit = {
+						scope:target = {
+							title_province = {
+								building_slots > 5
+							}
+						}
+					}
+				multiply = 2
+			}
+			if = {
+				limit = {
+						scope:target = {
+							title_province = {
+								building_slots > 6
+							}
+						}
+					}
+				multiply = 2
+			}
+			if = {
+				limit = {
+						scope:target = {
+							title_province = {
+								building_slots > 7
+							}
+						}
+					}
+				multiply = 3
+			}
+			if = {
+				limit = {
+						scope:target = {
+							title_province = {
+								building_slots > 8
+							}
+						}
+					}
+				multiply = 3
+			}
+			if = {
+				limit = {
+						scope:target = {
+							title_province = {
+								building_slots > 9
+							}
+						}
+					}
+				multiply = 4
+			}
+
+			## Innovations that add building slot divide the final value by 2
+			if = {
+				limit = {
+					scope:target = {
+						culture = {
+							has_innovation = innovation_ledger
+						}
+					}
+				}
+				divide = 2
+			}
+			if = {
+				limit = {
+					scope:target = {
+						culture = {
+							has_innovation = innovation_baliffs
+						}
+					}
+				}
+				divide = 2
+			}
+			if = {
+				limit = {
+					scope:target = {
+						culture = {
+							has_innovation = innovation_windmills
+						}
+					}
+				}
+				divide = 2
+			}
+			if = {
+				limit = {
+					scope:target = {
+						culture = {
+							has_innovation = innovation_guilds
+						}
+					}
+				}
+				divide = 2
+			}
+		}
+	}
+
+	on_accept = {
+		custom_tooltip = bck_extra_slot_interaction_tt_a
+		scope:actor = {
+
+			send_interface_toast = {
+				title = bck_extra_slot_interaction_notification
+				right_icon = scope:actor
+				if = {
+					limit = { exists = scope:target.title_province }
+					scope:target.title_province = {
+						add_province_modifier = extra_building_slot
+					}
+				}
+			}
+		}
+	}
+}
