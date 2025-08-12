@@ -1,0 +1,11 @@
+l_french:
+  bck_extra_slot_interaction:0 "Agrandir les infrastructures"
+  bck_extra_slot_interaction_desc:0 "#F Agrandissez les infrastructures locales pour permettre la construction de plus de bâtiments.#!"
+  bck_extra_slot_interaction_notification:0 "Les infrastructures locales ont été améliorées"
+  bck_extra_slot_interaction_tt_a:0 "Le coût pour agrandir les infrastructures locales dépend du nombre d’emplacements de construction, des innovations culturelles et du développement local."
+ 
+  rule_bck_extra_slots_cost:0 "BCK - Prix d'emplacement supplémentaire"
+  setting_bck_extra_slots_cost_dynamic:0 "Dynamique"
+  setting_bck_extra_slots_cost_dynamic_desc:0 "Le coût d’agrandissement est calculé dynamiquement en fonction de plusieurs facteurs, notamment le nombre d’emplacements de construction, les innovations culturelles et le développement local."
+  setting_bck_extra_slots_cost_fixed:0 "Fixe"
+  setting_bck_extra_slots_cost_fixed_desc:0 "Le coût d’agrandissement est fixé à 250, quels que soient les autres facteurs. Cette option offre un coût simple et prévisible pour chaque nouvel emplacement de construction."

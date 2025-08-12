@@ -1,0 +1,11 @@
+﻿l_english:
+  bck_extra_slot_interaction:0 "Expand Infrastructure"
+  bck_extra_slot_interaction_desc:0 "#F Expand the local infrastructure allowing construction of more buildings. #!"
+  bck_extra_slot_interaction_notification:0 "Local infrastructure has been improved"
+  bck_extra_slot_interaction_tt_a:0 "The cost to expand the local infrastructure is related to how many building slots you have, your culture innovations and the local development"
+
+  rule_bck_extra_slots_cost:0 "BCK - Extra Slot Price"
+  setting_bck_extra_slots_cost_dynamic:0 "Dynamic"
+  setting_bck_extra_slots_cost_dynamic_desc:0 "The expansion cost is calculated dynamically based on multiple factors, including the number of building slots, culture innovations, and local development."
+  setting_bck_extra_slots_cost_fixed:0 "Fixed"
+  setting_bck_extra_slots_cost_fixed_desc:0 "The expansion cost is fixed at 250, regardless of other factors. This option provides a simple, predictable cost for each new building slot."

@@ -1,0 +1,11 @@
+l_simp_chinese:
+  bck_extra_slot_interaction:0 "扩建基础设施"
+  bck_extra_slot_interaction_desc:0 "#F 扩建当地基础设施，以便建造更多建筑。#!"
+  bck_extra_slot_interaction_notification:0 "当地基础设施已改善"
+  bck_extra_slot_interaction_tt_a:0 "扩建当地基础设施的成本取决于建筑槽数量、文化创新和当地发展水平。"
+
+  rule_bck_extra_slots_cost:0 "BCK - 额外槽位价格"
+  setting_bck_extra_slots_cost_dynamic:0 "动态"
+  setting_bck_extra_slots_cost_dynamic_desc:0 "扩建成本会根据多个因素动态计算，包括建筑槽数量、文化创新和当地发展。"
+  setting_bck_extra_slots_cost_fixed:0 "固定"
+  setting_bck_extra_slots_cost_fixed_desc:0 "扩建成本固定为250，不受其他因素影响。此选项为每个新的建筑槽提供简单且可预测的成本。"

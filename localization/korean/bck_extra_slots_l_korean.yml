@@ -1,0 +1,11 @@
+l_korean:
+  bck_extra_slot_interaction:0 "기반 시설 확장"
+  bck_extra_slot_interaction_desc:0 "#F 지역 기반 시설을 확장하여 더 많은 건물을 건설할 수 있도록 합니다.#!"
+  bck_extra_slot_interaction_notification:0 "지역 기반 시설이 향상되었습니다"
+  bck_extra_slot_interaction_tt_a:0 "기반 시설 확장 비용은 건물 슬롯 수, 문화 혁신, 지역 개발 수준에 따라 달라집니다."
+
+  rule_bck_extra_slots_cost:0 "BCK - 추가 슬롯 가격"
+  setting_bck_extra_slots_cost_dynamic:0 "동적"
+  setting_bck_extra_slots_cost_dynamic_desc:0 "확장 비용은 건물 슬롯 수, 문화 혁신, 지역 개발 수준 등 여러 요인을 바탕으로 동적으로 계산됩니다."
+  setting_bck_extra_slots_cost_fixed:0 "고정"
+  setting_bck_extra_slots_cost_fixed_desc:0 "확장 비용은 다른 요인과 상관없이 250으로 고정됩니다. 이 옵션은 간단하고 예측 가능한 가격으로 새로운 건물 슬롯을 제공합니다."

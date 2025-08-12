@@ -1,0 +1,11 @@
+l_german:
+  bck_extra_slot_interaction:0 "Infrastruktur ausbauen"
+  bck_extra_slot_interaction_desc:0 "#F Erweitern Sie die lokale Infrastruktur, um den Bau weiterer Gebäude zu ermöglichen.#!"
+  bck_extra_slot_interaction_notification:0 "Die lokale Infrastruktur wurde verbessert"
+  bck_extra_slot_interaction_tt_a:0 "Die Kosten für den Ausbau der lokalen Infrastruktur hängen von der Anzahl der Bauplätze, den kulturellen Innovationen und der lokalen Entwicklung ab."
+
+  rule_bck_extra_slots_cost:0 "BCK - Zusatzplatzpreis"
+  setting_bck_extra_slots_cost_dynamic:0 "Dynamisch"
+  setting_bck_extra_slots_cost_dynamic_desc:0 "Die Ausbaukosten werden dynamisch auf Grundlage mehrerer Faktoren berechnet, darunter die Anzahl der Bauplätze, kulturelle Innovationen und die lokale Entwicklung."
+  setting_bck_extra_slots_cost_fixed:0 "Fest"
+  setting_bck_extra_slots_cost_fixed_desc:0 "Die Ausbaukosten sind auf 250 festgelegt, unabhängig von anderen Faktoren. Diese Option bietet einen einfachen, vorhersehbaren Preis für jeden neuen Bauplatz."

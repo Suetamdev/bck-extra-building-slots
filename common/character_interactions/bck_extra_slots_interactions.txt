@@ -37,187 +37,193 @@
 		gold = {
 			value = 250
 
-			# City, Temple and Tribal Holding increase the scale value
 			if = {
 				limit = {
-					scope:target = {
-						title_province = {
-							OR = {
-								has_holding_type = tribal_holding
-								has_holding_type = city_holding
-								has_holding_type = church_holding
+					has_game_rule = bck_extra_slots_cost_dynamic
+				}
+				
+				# City, Temple and Tribal Holding increase the scale value
+				if = {
+					limit = {
+						scope:target = {
+							title_province = {
+								OR = {
+									has_holding_type = tribal_holding
+									has_holding_type = city_holding
+									has_holding_type = church_holding
+								}
 							}
 						}
 					}
+					add = 100
 				}
-				add = 100
-			}
 
-			# Development reduce the scale value
-			if = {
-				limit = {
-					scope:target = {
-						title_province = {
-							county = { development_level >= 25 }
+				# Development reduce the scale value
+				if = {
+					limit = {
+						scope:target = {
+							title_province = {
+								county = { development_level >= 25 }
+							}
 						}
 					}
+					add = -35
 				}
-				add = -35
-			}
-			if = {
-				limit = {
-					scope:target = {
-						title_province = {
-							county = { development_level >= 50 }
+				if = {
+					limit = {
+						scope:target = {
+							title_province = {
+								county = { development_level >= 50 }
+							}
 						}
 					}
+					add = -35
 				}
-				add = -35
-			}
-			if = {
-				limit = {
-					scope:target = {
-						title_province = {
-							county = { development_level >= 75 }
+				if = {
+					limit = {
+						scope:target = {
+							title_province = {
+								county = { development_level >= 75 }
+							}
 						}
 					}
+					add = -35
 				}
-				add = -35
-			}
-			if = {
-				limit = {
-					scope:target = {
-						title_province = {
-							county = { development_level >= 100 }
+				if = {
+					limit = {
+						scope:target = {
+							title_province = {
+								county = { development_level >= 100 }
+							}
 						}
 					}
+					add = -45
 				}
-				add = -45
-			}
 
-			# Every Building slot multiply the value
-			if = {
-				limit = {
-						scope:target = {
-							title_province = {
-								building_slots > 2
+				# Every Building slot multiply the value
+				if = {
+					limit = {
+							scope:target = {
+								title_province = {
+									building_slots > 2
+								}
 							}
 						}
-					}
-				add = 150
-			}
-			if = {
-				limit = {
-						scope:target = {
-							title_province = {
-								building_slots > 3
+					add = 150
+				}
+				if = {
+					limit = {
+							scope:target = {
+								title_province = {
+									building_slots > 3
+								}
 							}
 						}
-					}
-				add = 200
-			}
-			if = {
-				limit = {
-						scope:target = {
-							title_province = {
-								building_slots > 4
+					add = 200
+				}
+				if = {
+					limit = {
+							scope:target = {
+								title_province = {
+									building_slots > 4
+								}
 							}
 						}
-					}
-				add = 250
-				multiply = 2
-			}
-			if = {
-				limit = {
-						scope:target = {
-							title_province = {
-								building_slots > 5
+					add = 250
+					multiply = 2
+				}
+				if = {
+					limit = {
+							scope:target = {
+								title_province = {
+									building_slots > 5
+								}
 							}
 						}
-					}
-				multiply = 2
-			}
-			if = {
-				limit = {
-						scope:target = {
-							title_province = {
-								building_slots > 6
+					multiply = 2
+				}
+				if = {
+					limit = {
+							scope:target = {
+								title_province = {
+									building_slots > 6
+								}
 							}
 						}
-					}
-				multiply = 2
-			}
-			if = {
-				limit = {
-						scope:target = {
-							title_province = {
-								building_slots > 7
+					multiply = 2
+				}
+				if = {
+					limit = {
+							scope:target = {
+								title_province = {
+									building_slots > 7
+								}
 							}
 						}
-					}
-				multiply = 3
-			}
-			if = {
-				limit = {
-						scope:target = {
-							title_province = {
-								building_slots > 8
+					multiply = 3
+				}
+				if = {
+					limit = {
+							scope:target = {
+								title_province = {
+									building_slots > 8
+								}
 							}
 						}
-					}
-				multiply = 3
-			}
-			if = {
-				limit = {
-						scope:target = {
-							title_province = {
-								building_slots > 9
+					multiply = 3
+				}
+				if = {
+					limit = {
+							scope:target = {
+								title_province = {
+									building_slots > 9
+								}
 							}
 						}
-					}
-				multiply = 4
-			}
+					multiply = 4
+				}
 
-			## Innovations that add building slot divide the final value by 2
-			if = {
-				limit = {
-					scope:target = {
-						culture = {
-							has_innovation = innovation_ledger
+				## Innovations that add building slot divide the final value by 2
+				if = {
+					limit = {
+						scope:target = {
+							culture = {
+								has_innovation = innovation_ledger
+							}
 						}
 					}
+					divide = 2
 				}
-				divide = 2
-			}
-			if = {
-				limit = {
-					scope:target = {
-						culture = {
-							has_innovation = innovation_baliffs
+				if = {
+					limit = {
+						scope:target = {
+							culture = {
+								has_innovation = innovation_baliffs
+							}
 						}
 					}
+					divide = 2
 				}
-				divide = 2
-			}
-			if = {
-				limit = {
-					scope:target = {
-						culture = {
-							has_innovation = innovation_windmills
+				if = {
+					limit = {
+						scope:target = {
+							culture = {
+								has_innovation = innovation_windmills
+							}
 						}
 					}
+					divide = 2
 				}
-				divide = 2
-			}
-			if = {
-				limit = {
-					scope:target = {
-						culture = {
-							has_innovation = innovation_guilds
+				if = {
+					limit = {
+						scope:target = {
+							culture = {
+								has_innovation = innovation_guilds
+							}
 						}
 					}
+					divide = 2
 				}
-				divide = 2
 			}
 		}
 	}

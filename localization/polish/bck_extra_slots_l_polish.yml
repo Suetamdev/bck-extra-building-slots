@@ -1,0 +1,11 @@
+l_polish:
+  bck_extra_slot_interaction:0 "Rozbuduj infrastrukturę"
+  bck_extra_slot_interaction_desc:0 "#F Rozbuduj lokalną infrastrukturę, aby umożliwić budowę większej liczby budynków.#!"
+  bck_extra_slot_interaction_notification:0 "Lokalna infrastruktura została ulepszona"
+  bck_extra_slot_interaction_tt_a:0 "Koszt rozbudowy lokalnej infrastruktury zależy od liczby miejsc na budynki, innowacji kulturowych i poziomu rozwoju lokalnego."
+
+  rule_bck_extra_slots_cost:0 "BCK - Cena dodatkowego miejsca"
+  setting_bck_extra_slots_cost_dynamic:0 "Dynamiczna"
+  setting_bck_extra_slots_cost_dynamic_desc:0 "Koszt rozbudowy jest obliczany dynamicznie na podstawie wielu czynników, w tym liczby miejsc na budynki, innowacji kulturowych i rozwoju lokalnego."
+  setting_bck_extra_slots_cost_fixed:0 "Stała"
+  setting_bck_extra_slots_cost_fixed_desc:0 "Koszt rozbudowy jest stały i wynosi 250, niezależnie od innych czynników. Ta opcja zapewnia prosty i przewidywalny koszt każdego nowego miejsca na budynek."

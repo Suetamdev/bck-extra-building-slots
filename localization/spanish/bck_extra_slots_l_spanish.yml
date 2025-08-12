@@ -1,0 +1,11 @@
+l_spanish:
+  bck_extra_slot_interaction:0 "Ampliar infraestructura"
+  bck_extra_slot_interaction_desc:0 "#F Amplía la infraestructura local para permitir la construcción de más edificios.#!"
+  bck_extra_slot_interaction_notification:0 "La infraestructura local ha sido mejorada"
+  bck_extra_slot_interaction_tt_a:0 "El costo de ampliar la infraestructura local depende del número de espacios de construcción, las innovaciones culturales y el desarrollo local."
+
+  rule_bck_extra_slots_cost:0 "BCK - Precio de espacio extra"
+  setting_bck_extra_slots_cost_dynamic:0 "Dinámico"
+  setting_bck_extra_slots_cost_dynamic_desc:0 "El costo de expansión se calcula dinámicamente en función de varios factores, incluido el número de espacios de construcción, las innovaciones culturales y el desarrollo local."
+  setting_bck_extra_slots_cost_fixed:0 "Fijo"
+  setting_bck_extra_slots_cost_fixed_desc:0 "El costo de expansión es fijo en 250, independientemente de otros factores. Esta opción proporciona un precio simple y predecible para cada nuevo espacio de construcción."
