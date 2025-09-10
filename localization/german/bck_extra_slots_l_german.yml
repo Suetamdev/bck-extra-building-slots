@@ -1,4 +1,4 @@
-l_german:
+﻿l_german:
   bck_extra_slot_interaction:0 "Infrastruktur ausbauen"
   bck_extra_slot_interaction_desc:0 "#F Erweitern Sie die lokale Infrastruktur, um den Bau weiterer Gebäude zu ermöglichen.#!"
   bck_extra_slot_interaction_notification:0 "Die lokale Infrastruktur wurde verbessert"

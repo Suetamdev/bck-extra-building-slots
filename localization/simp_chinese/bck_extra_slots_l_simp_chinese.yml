@@ -1,4 +1,4 @@
-l_simp_chinese:
+﻿l_simp_chinese:
   bck_extra_slot_interaction:0 "扩建基础设施"
   bck_extra_slot_interaction_desc:0 "#F 扩建当地基础设施，以便建造更多建筑。#!"
   bck_extra_slot_interaction_notification:0 "当地基础设施已改善"

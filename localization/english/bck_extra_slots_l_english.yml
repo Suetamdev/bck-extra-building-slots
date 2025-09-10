@@ -1,6 +1,6 @@
 ﻿l_english:
   bck_extra_slot_interaction:0 "Expand Infrastructure"
-  bck_extra_slot_interaction_desc:0 "#F Expand the local infrastructure allowing construction of more buildings. #!"
+  bck_extra_slot_interaction_desc:0 "#F Expand the local infrastructure allowing construction of more buildings.#!"
   bck_extra_slot_interaction_notification:0 "Local infrastructure has been improved"
   bck_extra_slot_interaction_tt_a:0 "The cost to expand the local infrastructure is related to how many building slots you have, your culture innovations and the local development"
 

@@ -1,7 +1,6 @@
 ﻿bck_extra_slot_interaction = {
 	category = interaction_category_uncategorized
 	hidden = yes
-	special_interaction = adding_building_slot
 	desc = bck_extra_slot_interaction_desc
 	target_type = title
 	target_filter = recipient_domain_titles_including_leases

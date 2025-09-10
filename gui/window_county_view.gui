@@ -1981,12 +1981,10 @@ window = {
 								# Upgrade buildings
 								scrollarea = {
 									name = "buildings_grid_wrapper"
-									ignoreinvisible = yes
 
 									size = { 348 60 }
 									scrollbarpolicy_vertical = always_off
 									scrollbarpolicy_horizontal = as_needed
-									righttoleft = yes
 									autoresizescrollarea = yes
 									maximumsize = { 348 60 }
 
@@ -3273,7 +3271,7 @@ types CountyViewTypes
 		progressbar_standard = {
 			name = "construct_progressbar"
 			visible = "[GUIBuildingItem.IsConstructing]"
-			parentanchor = top|center
+			parentanchor = top|hcenter
 			position = { 0 4 }
 			alwaystransparent = yes
 			size = { 65% 8 }
