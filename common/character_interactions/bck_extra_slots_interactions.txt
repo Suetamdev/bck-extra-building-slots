@@ -8,10 +8,13 @@
 
 	can_be_picked_title = {
 		scope:target = {
-			holder = {
-				OR = {
-					this = scope:actor
-					is_vassal_or_below_of = scope:actor
+			trigger_if = {
+				limit = { exists = holder }
+				holder = {
+					OR = {
+						this = scope:actor
+						is_vassal_or_below_of = scope:actor
+					}
 				}
 			}
 

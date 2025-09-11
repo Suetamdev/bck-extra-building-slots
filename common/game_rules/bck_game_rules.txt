@@ -7,10 +7,8 @@ bck_extra_slots_cost = {
 	default = bck_extra_slots_cost_dynamic
 
 	bck_extra_slots_cost_dynamic = {
-		flag = GG_can_change_rule	
 	}
 
 	bck_extra_slots_cost_fixed = {
-		flag = GG_can_change_rule	
 	}
 }
