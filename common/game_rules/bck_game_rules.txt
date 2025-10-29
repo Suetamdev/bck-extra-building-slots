@@ -1,5 +1,4 @@
-﻿
-bck_extra_slots_cost = {
+﻿bck_extra_slots_cost = {
 	categories = {
 		bck setup flavor
 	}
